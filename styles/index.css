@@ -4,19 +4,52 @@
 }
 
 body{
-    background-color: gray;
+    background-color: #F3F0EE;
 }
 
 header{
-    margin-top: 3vh;
+    margin-top: 5vh;
     display: flex;
 }
 
 .menuButton{
     padding: 4vw;
+    margin: 0;
 }
 
 .logo{
     justify-self: center;
-    /* margin-left: 10vw; */
+    margin: auto;
+}
+
+main{
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 88vh; /* dit verpest wat code */
+}
+
+h1{
+    width: 80vw;
+    margin-bottom: 2vh;
+}
+
+.plant{
+    width: 80vw;
+    height: 50vh;
+}
+
+p{
+    margin-top: 3vh;
+    font-size: 1.4rem;
+}
+
+.ruilenDoneren{
+    font-size: 1.25rem;
+    padding: 3.5vw;
+    margin: 3vw;
+    width: 50vw;
 }
