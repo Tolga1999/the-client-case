@@ -1,3 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
-    background-color: blue;
+    background-color: gray;
+}
+
+header{
+    margin-top: 3vh;
+    display: flex;
+}
+
+.menuButton{
+    padding: 4vw;
+}
+
+.logo{
+    justify-self: center;
+    /* margin-left: 10vw; */
 }
