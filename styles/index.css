@@ -14,11 +14,17 @@ header{
 }
 
 .menuButton{
+    display: none;
     padding: 4vw;
     margin: 0;
+    color: #ffff;
+    background-color: #B1D338;
+    border-radius: 0 0.5rem 0.5rem 0;
+    border: none;
 }
 
 .logo{
+    width: 75vw;
     justify-self: center;
     margin: auto;
 }
@@ -30,7 +36,7 @@ main{
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 88vh; /* dit verpest wat code */
+    height: 92.5vh; /* dit verpest wat code */
 }
 
 h1{
@@ -45,6 +51,7 @@ h1{
 
 p{
     margin-top: 1.5vh;
+    margin-bottom: 2vh;
     font-size: 1.1rem;
     font-weight: bold;
     letter-spacing: 0.1em;
