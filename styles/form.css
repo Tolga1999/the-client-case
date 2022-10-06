@@ -5,6 +5,7 @@ form{
     border: 3px solid #B1D338;
     border-radius: 0.5rem;
     margin-top: 5vh;
+    /* alles standaard achter de overlay */
 }
 
 label{

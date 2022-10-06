@@ -9,12 +9,12 @@ body{
 }
 
 header{
-    margin-top: 3vh;
     display: flex;
     justify-content: center;
 }
 
 .logo{
+    margin-top: 3vh;
     width: 75vw;
 }
 
@@ -89,5 +89,15 @@ p{
 footer{
     position: sticky;
     bottom: 0;
-    margin: 1vw;
 }
+
+/* MENU OVERLAY */
+#overlay{
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 113.75vh; /* los dit op een andere manier op! */
+    background-color: hotpink;
+    z-index: 0;
+}
+/* ------------ */
