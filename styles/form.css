@@ -1,0 +1,64 @@
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #B1D338;
+    border-radius: 0.5rem;
+    margin-top: 5vh;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+form label, input{
+    padding: 2.2vw;
+    margin: 1vw;
+}
+
+.labelInput{
+    padding: 7vw;
+    width: 75vw;
+}
+
+.labelInput div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3vh;
+}
+
+input{
+    border: solid 3px #ccc;
+    height: 2.5vh;
+    transition: ease 0.5s;
+    width: 40%;
+}
+
+input:focus{
+    border: solid 3px #B1D338;
+    outline: none;
+    width: 75%;
+}
+
+.submit{
+    color: #ffff;
+    background-color: #B1D338;
+    border-radius: 0.5rem;
+    /* exact values as Figma */
+    height: 60px;
+    width: 187px; 
+    font-size: 1.2rem;
+    margin-bottom: 3vh;
+}
+
+.kiesPlant{
+    width: 60vw;
+    margin-bottom: 2vh;
+}
+
+.arrowDown{
+    width: 30vw;
+}
