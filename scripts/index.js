@@ -4,12 +4,14 @@ let body = document.querySelector('body')
 
 function menuOpen(){
     overlay.classList.add('overlayOn')
-    menuButton.style.display = 'none'
-    body.style.position = 'fixed'
+    menuButton.style.visibility = 'hidden'
+    menuButton.style.opacity = '0'
+    body.style.overflow = 'hidden'
 }
 
 function gaTerug(){
     overlay.classList.remove('overlayOn')
-    menuButton.style.display = 'inline'
+    menuButton.style.visibility = 'visible'
+    menuButton.style.opacity = '1'
     body.style = ''
 }

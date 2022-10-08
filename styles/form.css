@@ -47,12 +47,27 @@ input:focus{
 .submit{
     color: #ffff;
     background-color: #B1D338;
+    border: none;
     border-radius: 0.5rem;
     /* exact values as Figma */
     height: 60px;
     width: 187px; 
     font-size: 1.2rem;
     margin-bottom: 3vh;
+}
+
+.plantInruilen{
+    display: flex;
+    align-items: center;
+}
+
+.plantInruilen p{
+    position: absolute;
+    z-index: 1;
+    font-size: 1.9rem;
+    color: #333467;
+    width: 60%;
+    margin: 0 0 0 5vw;
 }
 
 .kiesPlant{
@@ -62,4 +77,5 @@ input:focus{
 
 .arrowDown{
     width: 30vw;
+    margin-bottom: 1.5vh;
 }

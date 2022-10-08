@@ -89,7 +89,6 @@ p{
 footer{
     position: sticky;
     bottom: 0;
-    background-color: red;
 }
 
 /* MENU OVERLAY */
@@ -100,7 +99,7 @@ footer{
     width: 100%;
     height: 100%;
     background-color: rgba(243, 240, 238, 0.8);
-    z-index: 0;
+    z-index: 2;
     transition: 0.5s ease;
 }
 
