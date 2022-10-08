@@ -10,7 +10,14 @@
 </head>
 
 <body>
-    <div id="overlay"></div>
+    <div id="overlay">
+        <div class="buttons">
+            <button class="ruilenDoneren" id="gaTerugKnop" onclick="gaTerug()">Ga terug</button>
+            <a class="ruilenDoneren" href="html/form.html">Home</a>
+            <a class="ruilenDoneren" href="html/form.html">Ruilen</a>
+            <a class="ruilenDoneren" href="html/form.html">Doneren</a>
+        </div>
+    </div>
     <header>
         <a href="index.html">
             <img class="logo" src="https://hvacommunity.sirv.com/Buurtcampus%20Oost-logo.svg" alt="logo">
@@ -34,7 +41,7 @@
         </div>
     </main>
     <footer>
-        <button class="menuButton" onclick="menuOpen()">Menu</button>
+        <button id="menuButton" onclick="menuOpen()">Menu</button>
     </footer>
 </body>
 
