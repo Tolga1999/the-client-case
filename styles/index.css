@@ -93,13 +93,21 @@ footer{
 }
 
 /* MENU OVERLAY */
-#overlay{
-    display: none;
+.overlay{
+    visibility: hidden; /* visibility: hidden zodat je niet kan klikken op de knoppen */
+    opacity: 0;
     position: fixed;
     width: 100%;
-    height: 100%; /* los dit op een andere manier op! */
+    height: 100%;
     background-color: rgba(243, 240, 238, 0.8);
     z-index: 0;
+    transition: 0.5s ease;
+}
+
+/* opacity wordt veranderd zodat het menu zichtbaar is */
+.overlayOn{
+    visibility: visible;
+    opacity: 1;
 }
 
 .buttons{
