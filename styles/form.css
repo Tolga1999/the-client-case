@@ -64,7 +64,7 @@ input:focus{
 .plantInruilen p{
     position: absolute;
     z-index: 1;
-    font-size: 1.9rem;
+    font-size: 1.65rem;
     color: #333467;
     width: 60%;
     margin: 0 0 0 5vw;
@@ -78,4 +78,20 @@ input:focus{
 .arrowDown{
     width: 30vw;
     margin-bottom: 1.5vh;
+}
+
+.vragen{
+    width: 75vw;
+    margin-top: 3vh;
+    border-top: #B1D338 solid 3px;
+    padding-top: 2vh;
+}
+
+.vragen h2{
+    color: #F86C24;
+    font-size: 2rem;
+}
+
+.googleMaps{
+    width: 90vw;
 }

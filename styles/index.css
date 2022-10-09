@@ -63,9 +63,6 @@ p{
 }
 
 .hoeWerktHet{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     width: 75vw;
     margin-top: 3vh;
     border-top: #B1D338 solid 3px;
