@@ -4,7 +4,10 @@ let body = document.querySelector('body')
 // selecteren van files
 let kiesPlant = document.querySelector('.kiesPlant')
 let inruilText = document.querySelector('.inruilText')
-let inputKiesPlant = document.getElementById('inputKiesPlant')
+// doneer pagina
+let doneerText = document.querySelector('.doneerText')
+let doneerPlant = document.querySelector('.doneerPlant')
+
 function menuOpen() {
     overlay.classList.add('overlayOn')
     menuButton.style.visibility = 'hidden'
@@ -19,13 +22,22 @@ function gaTerug() {
     body.style = ''
 }
 
+// ruilen pagina
 function selectedFile() {
-    console.log(inputKiesPlant.src)
     inruilText.innerHTML = 'Klik nogmaals voor een andere keuze'
     if (kiesPlant.src === 'http://127.0.0.1:5500/assets/cactus.jpg')
         kiesPlant.src = '/assets/arrowDown.png' //hardcoded omdat ik geen local resources kan inladen
     else {
         kiesPlant.src = '/assets/cactus.jpg'
-        console.log(kiesPlant.src)
+    }
+}
+
+// doneer pagina
+function selectedDoneerFile() {
+    doneerText.innerHTML = 'Klik nogmaals voor een andere keuze'
+    if (doneerPlant.src === 'http://127.0.0.1:5500/assets/cactus.jpg')
+        doneerPlant.src = '/assets/arrowDown.png' //hardcoded omdat ik geen local resources kan inladen
+    else {
+        doneerPlant.src = '/assets/cactus.jpg'
     }
 }

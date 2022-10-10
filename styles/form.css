@@ -62,7 +62,7 @@ input:focus{
     height: 100%;
 }
 
-.plantInruilen p{
+.inruilText{
     position: absolute;
     z-index: 1;
     font-size: 1.65rem;
@@ -81,7 +81,7 @@ input:focus{
     margin-bottom: 1.5vh;
 }
 
-#inputKiesPlant{
+.inputKiesPlant{
     position: absolute;
     z-index: 5;
     border: none;
@@ -106,4 +106,20 @@ input:focus{
 
 .googleMaps{
     width: 90vw;
+}
+
+/* DONEER PAGINA */
+.doneerPlant{
+    width: 65vw;
+    height: 40vh;
+    margin-bottom: 2vh;
+}
+
+.doneerText{
+    position: absolute;
+    z-index: 1;
+    font-size: 2.5rem;
+    width: 60%;
+    margin: 0 0 0 5vw;
+    color: #ffff;
 }
