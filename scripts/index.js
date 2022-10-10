@@ -50,6 +50,10 @@ function selectedDoneerFile() {
 }
 
 // donated page
+function tradedpage() {
+    window.location.href = "/html/traded.html"; // verander locatie na het completen van de form naar donated.html
+}
+
 function donatedpage() {
     window.location.href = "/html/donated.html"; // verander locatie na het completen van de form naar donated.html
 }

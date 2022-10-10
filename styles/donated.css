@@ -4,7 +4,7 @@ header {
     align-items: flex-end;
     margin: 0;
     height: 10vh;
-    background-color: #F86C24;
+    background-color: #383868;
     color: #ffff;
 }
 
@@ -65,4 +65,9 @@ main {
     display: flex;
     flex-direction: row;
 
+}
+
+/* TRADED */
+.timerHeader{
+    background-color: #F86C24;
 }
