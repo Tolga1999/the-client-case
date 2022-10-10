@@ -44,5 +44,5 @@ function selectedDoneerFile() {
 
 // donated page
 function donatedpage(){
-    window.location.href="/html/donated.html";
+    window.location.href="/html/donated.html"; // verander locatie na het completen van de form naar donated.html
 }
