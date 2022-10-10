@@ -25,19 +25,19 @@
         </a>
     </header>
     <main>
-        <form>
+        <form class="form" onsubmit="donatedpage();return false">
             <div class="labelInput">
                 <div>
                     <label for="naam">Naam</label>
-                    <input type="text" name="naam" required>
+                    <input type="text" name="naam" onclick="stopRefreshing()" required>
                 </div>
                 <div>
                     <label for="mobiel">Mobiel</label>
-                    <input type="text" name="mobiel" required>
+                    <input type="number" name="mobiel" required>
                 </div>
                 <div>
                     <label for="email">Email</label>
-                    <input type="text" name="email" required>
+                    <input type="email" name="email" required>
                 </div>
             </div>
             <div class="plantInruilen">

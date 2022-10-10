@@ -41,3 +41,8 @@ function selectedDoneerFile() {
         doneerPlant.src = '/assets/cactus.jpg'
     }
 }
+
+// donated page
+function donatedpage(){
+    window.location.href="/html/donated.html";
+}
