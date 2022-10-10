@@ -81,7 +81,7 @@ input:focus{
     margin-bottom: 1.5vh;
 }
 
-#inputKiesPlantje{
+#inputKiesPlant{
     position: absolute;
     z-index: 5;
     border: none;

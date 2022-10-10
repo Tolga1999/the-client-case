@@ -3,7 +3,8 @@ let menuButton = document.getElementById('menuButton')
 let body = document.querySelector('body')
 // selecteren van files
 let kiesPlant = document.querySelector('.kiesPlant')
-
+let inruilText = document.querySelector('.inruilText')
+let inputKiesPlant = document.getElementById('inputKiesPlant')
 function menuOpen() {
     overlay.classList.add('overlayOn')
     menuButton.style.visibility = 'hidden'
@@ -19,6 +20,8 @@ function gaTerug() {
 }
 
 function selectedFile() {
+    console.log(inputKiesPlant.src)
+    inruilText.innerHTML = 'Klik nogmaals voor een andere keuze'
     if (kiesPlant.src === 'http://127.0.0.1:5500/assets/cactus.jpg')
         kiesPlant.src = '/assets/arrowDown.png' //hardcoded omdat ik geen local resources kan inladen
     else {
