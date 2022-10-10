@@ -29,20 +29,21 @@
             <div class="labelInput">
                 <div>
                     <label for="naam">Naam</label>
-                    <input type="text" name="naam">
+                    <input type="text" name="naam" required>
                 </div>
                 <div>
                     <label for="mobiel">Mobiel</label>
-                    <input type="text" name="mobiel">
+                    <input type="text" name="mobiel" required>
                 </div>
                 <div>
                     <label for="email">Email</label>
-                    <input type="text" name="email">
+                    <input type="text" name="email" required>
                 </div>
             </div>
             <div class="plantInruilen">
                 <p>Wat wil je inruilen?</p>
                 <img class="kiesPlant" src="/assets/plant2.jpg" alt="kiesPlant">
+                <input type="file" id="inputKiesPlantje" accept="image/png, image/jpeg" onchange="selectedFile()" required> <!-- kieze van je plantje op je computer -->
             </div>
             <img class="arrowDown" src="/assets/arrowDown.png" alt="arrowDown">
             <div class="plantInruilen">
