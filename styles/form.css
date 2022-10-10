@@ -110,7 +110,8 @@ input:focus{
 
 /* DONEER PAGINA */
 .doneerPlant{
-    width: 65vw;
+    object-fit: cover; /* object wordt niet meer gestretched en houdt aspect ratio */
+    width: 75vw;
     height: 40vh;
     margin-bottom: 2vh;
 }

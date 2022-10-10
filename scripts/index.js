@@ -8,6 +8,13 @@ let inruilText = document.querySelector('.inruilText')
 let doneerText = document.querySelector('.doneerText')
 let doneerPlant = document.querySelector('.doneerPlant')
 
+// reviews
+const star1 = document.querySelector('.starIcon1')
+const star2 = document.querySelector('.starIcon2')
+const star3 = document.querySelector('.starIcon3')
+const star4 = document.querySelector('.starIcon4')
+const star5 = document.querySelector('.starIcon5')
+
 function menuOpen() {
     overlay.classList.add('overlayOn')
     menuButton.style.visibility = 'hidden'
@@ -43,6 +50,45 @@ function selectedDoneerFile() {
 }
 
 // donated page
-function donatedpage(){
-    window.location.href="/html/donated.html"; // verander locatie na het completen van de form naar donated.html
+function donatedpage() {
+    window.location.href = "/html/donated.html"; // verander locatie na het completen van de form naar donated.html
+}
+
+function fillStars(star) {
+    switch (star) {
+        case 1:
+            star1.style.opacity = '1'
+            break
+        case 2:
+            star1.style.opacity = '1'
+            star2.style.opacity = '1'
+            break
+        case 3:
+            star1.style.opacity = '1'
+            star2.style.opacity = '1'
+            star3.style.opacity = '1'
+            break
+        case 4:
+            star1.style.opacity = '1'
+            star2.style.opacity = '1'
+            star3.style.opacity = '1'
+            star4.style.opacity = '1'
+            break
+        case 5:
+            star1.style.opacity = '1'
+            star2.style.opacity = '1'
+            star3.style.opacity = '1'
+            star4.style.opacity = '1'
+            star5.style.opacity = '1'
+            break
+    }
+}
+
+
+function normallStars() {
+    star1.style.opacity = '0.5'
+    star2.style.opacity = '0.5'
+    star3.style.opacity = '0.5'
+    star4.style.opacity = '0.5'
+    star5.style.opacity = '0.5'
 }
