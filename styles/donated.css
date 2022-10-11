@@ -6,6 +6,7 @@ header {
     height: 10vh;
     background-color: #383868;
     color: #ffff;
+    font-size: 1.3rem;
 }
 
 header p {
@@ -25,7 +26,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: 45vh;
+    height: 50.5vh;
     width: 80vw;
     border: 3px solid #B1D338;
     border-radius: 0.5rem;
@@ -64,10 +65,31 @@ main {
 .stars{
     display: flex;
     flex-direction: row;
+    margin-top: 1vh;
+}
 
+.informatieText h1{
+    color: #F86C24;
+    font-size: 1.5rem;
+    margin-bottom: 1vh;
+}
+
+.informatieText p{
+    font-size: 1rem;
+}
+
+.buurtcampusOostLink{
+    text-decoration: none;
+    color: #383868;
+    font-weight: bold;
 }
 
 /* TRADED */
 .timerHeader{
     background-color: #F86C24;
+}
+
+.informatieText{
+    width: 80vw;
+    margin: 3vh 0;
 }

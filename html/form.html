@@ -25,34 +25,38 @@
         </a>
     </header>
     <main>
-        <form onsubmit="tradedpage();return false">
-            <div class="labelInput">
-                <div>
-                    <label for="naam">Naam</label>
-                    <input type="text" name="naam" required>
+        <section>
+            <h1 class="titelForm">Ruilen</h1>
+            <form onsubmit="tradedpage();return false">
+                <div class="labelInput">
+                    <div>
+                        <label for="naam">Naam</label>
+                        <input type="text" name="naam" required>
+                    </div>
+                    <div>
+                        <label for="mobiel">Mobiel</label>
+                        <input type="text" name="mobiel" required>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="text" name="email" required>
+                    </div>
                 </div>
-                <div>
-                    <label for="mobiel">Mobiel</label>
-                    <input type="text" name="mobiel" required>
+                <div class="plantInruilen">
+                    <p class="inruilText">Wat wil je inruilen?</p>
+                    <img class="kiesPlant" src="/assets/plant2.jpg" alt="kiesPlant">
+                    <input type="file" class="inputKiesPlant" accept="image/png, image/jpeg" onchange="selectedFile()"
+                        required> <!-- kieze van je plantje op je computer -->
                 </div>
-                <div>
-                    <label for="email">Email</label>
-                    <input type="text" name="email" required>
+                <img class="arrowDown" src="/assets/arrowDown.png" alt="arrowDown">
+                <div class="plantInruilen">
+                    <p class="inruilText">Wat voor plantje wil je?</p>
+                    <img class="kiesPlant" src="/assets/plant2.jpg" alt="kiesPlant">
                 </div>
-            </div>
-            <div class="plantInruilen">
-                <p class="inruilText">Wat wil je inruilen?</p>
-                <img class="kiesPlant" src="/assets/plant2.jpg" alt="kiesPlant">
-                <input type="file" class="inputKiesPlant" accept="image/png, image/jpeg" onchange="selectedFile()"
-                    required> <!-- kieze van je plantje op je computer -->
-            </div>
-            <img class="arrowDown" src="/assets/arrowDown.png" alt="arrowDown">
-            <div class="plantInruilen">
-                <p class="inruilText">Wat voor plantje wil je?</p>
-                <img class="kiesPlant" src="/assets/plant2.jpg" alt="kiesPlant">
-            </div>
-            <input class="submit" type="submit" value="Ruilen">
-        </form>
+                <input class="submit" type="submit" value="Ruilen">
+            </form>
+        </section>
+
         <div class="vragen">
             <h2>Vragen of zoekt u contact?</h2>
             <p>U kunt ons altijd bereiken via mail, telefoon of op locatie van maandag t/m vrijdag van 09:00 tot 18:00.
@@ -64,7 +68,10 @@
                 hello@buurtcampusoost.nl
             </p>
         </div>
-        <img class="googleMaps" src="/assets/googlemaps.png">
+        <div class="googleMapsContent">
+            <h3>Locatie</h3>
+            <img class="googleMapsFoto" src="/assets/googlemaps.png">
+        </div>
     </main>
     <footer>
         <button id="menuButton" onclick="menuOpen()">Menu</button>

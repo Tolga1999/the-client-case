@@ -21,14 +21,15 @@ header{
 
 main{
     display: flex;
-    width: 100vw;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-h1{
+.indexTitel{
     width: 80vw;
+    color: #333467;
+    font-size: 2.1rem;
     margin-bottom: 2vh;
     margin-top: 3vh;
 }
@@ -38,12 +39,12 @@ h1{
     height: 50vh;
 }
 
-p{
+.subtext{
+    color: #333467;
+    font-size: 1.25rem;
+    letter-spacing: 0.05em;
     margin-top: 1.5vh;
     margin-bottom: 2vh;
-    font-size: 1.1rem;
-    font-weight: bold;
-    letter-spacing: 0.1em;
 }
 
 .ruilenDoneren{
@@ -67,12 +68,18 @@ p{
     width: 75vw;
     margin-top: 3vh;
     border-top: #B1D338 solid 3px;
-    padding-top: 2vh;
+    padding-top: 3vh;
 }
 
 .hoeWerktHet h2{
     color: #F86C24;
     font-size: 2rem;
+    margin-bottom: 0.5vh;
+}
+
+footer{
+    position: sticky;
+    bottom: 0;
 }
 
 #menuButton{
@@ -82,11 +89,6 @@ p{
     padding: 6vw;
     border-radius: 0 1rem 2rem 0;
     border: none;
-}
-
-footer{
-    position: sticky;
-    bottom: 0;
 }
 
 /* MENU OVERLAY */

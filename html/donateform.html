@@ -25,29 +25,33 @@
         </a>
     </header>
     <main>
-        <form onsubmit="donatedpage();return false"> <!-- return false nodig zodat page niet meer reload -->
-            <div class="labelInput">
-                <div>
-                    <label for="naam">Naam</label>
-                    <input type="text" name="naam" required>
+        <section>
+            <h1 class="titelForm">Doneren</h1>
+            <form onsubmit="donatedpage();return false"> <!-- return false nodig zodat page niet meer reload -->
+                <div class="labelInput">
+                    <div>
+                        <label for="naam">Naam</label>
+                        <input type="text" name="naam" required>
+                    </div>
+                    <div>
+                        <label for="mobiel">Mobiel</label>
+                        <input type="number" name="mobiel" required>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" required>
+                    </div>
                 </div>
-                <div>
-                    <label for="mobiel">Mobiel</label>
-                    <input type="number" name="mobiel" required>
+                <div class="plantInruilen">
+                    <p class="doneerText">Wat wil je Doneren?</p>
+                    <img class="doneerPlant" src="/assets/cactus2.jpg" alt="kiesPlant">
+                    <input type="file" class="inputKiesPlant" accept="image/png, image/jpeg" onchange="selectedDoneerFile()"
+                        required> <!-- kieze van je plantje op je computer -->
                 </div>
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" required>
-                </div>
-            </div>
-            <div class="plantInruilen">
-                <p class="doneerText">Wat wil je Doneren?</p>
-                <img class="doneerPlant" src="/assets/cactus2.jpg" alt="kiesPlant">
-                <input type="file" class="inputKiesPlant" accept="image/png, image/jpeg" onchange="selectedDoneerFile()"
-                    required> <!-- kieze van je plantje op je computer -->
-            </div>
-            <input class="submit" type="submit" value="Doneer">
-        </form>
+                <input class="submit" type="submit" value="Doneer">
+            </form>
+        </section>
+       
     </main>
     <footer>
         <button id="menuButton" onclick="menuOpen()">Menu</button>
