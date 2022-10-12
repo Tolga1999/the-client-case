@@ -25,7 +25,7 @@
         <div class="plantKeuzeOba">
             <!-- labels used for accessibility -->
             <label class="planten" for="plant">
-                <input class="radioButton" type="radio" name="plant" value="">
+                <input class="radioButton" type="radio" name="plant" value="" onclick="gekozenPlantje()">
                 <img class="plantenFoto" src="/assets/plant.jpg" alt="plant1">
             </label>
             
@@ -77,7 +77,7 @@
                 <img class="arrowDown" src="/assets/arrowDown.png" alt="arrowDown">
                 <div class="plantInruilen">
                     <p class="inruilText">Wat voor plantje wil je?</p>
-                    <img class="kiesPlant" src="/assets/plant2.jpg" alt="kiesPlant" onclick="kiezenPlantje()">
+                    <img class="kiesPlant kiesPlant2" src="/assets/plant2.jpg" alt="kiesPlant" onclick="kiezenPlantje()">
                     <input type="button" class="inputKiesPlant" onclick="kiezenPlantje()" required>
                 </div>
                 <input class="submit" type="submit" value="Ruilen">

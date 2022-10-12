@@ -5,6 +5,9 @@ let body = document.querySelector('body')
 // selecteren van files
 let kiesPlant = document.querySelector('.kiesPlant')
 let inruilText = document.querySelector('.inruilText')
+// plant kiezen van oba
+let plantInput = document.querySelectorAll(".plantInruilen")
+
 // doneer pagina
 let doneerText = document.querySelector('.doneerText')
 let doneerPlant = document.querySelector('.doneerPlant')
@@ -44,11 +47,20 @@ function kiezenPlantje() {
     overlayPlant.classList.add('overlayOn')
     body.style.overflow = 'hidden'
 
-    let plantInput = document.querySelectorAll(".plantInruilen")
     // foreach wordt gebruikt voor elke element binnen de array
     plantInput.forEach(element => {
         element.style.opacity = "0"
-    });
+    })
+    let kiesPlant2 = document.querySelector('.kiesPlant2')
+    kiesPlant2.src = '/assets/star.png'
+}
+
+function gekozenPlantje(){
+    overlayPlant.classList.remove('overlayOn')
+    plantInput.forEach(element => {
+        element.style.opacity = "1"
+    })
+    body.style.overflow = 'scroll'
 }
 
 // doneer pagina

@@ -107,6 +107,7 @@ input:focus{
     flex-direction: column;
     align-items: center;
     position: relative;
+    margin-bottom: 5vh;
 }
 
 .planten{
@@ -125,7 +126,7 @@ input:focus{
 
 /* + selecteert de eerstvolgende sibling */
 .radioButton:checked + img{
-    outline: 2px solid red; /* outline is een lijn buiten de border */
+    outline: 2px solid #B1D338; /* outline is een lijn buiten de border */
 }
 
 /* END KIES PLANT OBA */
