@@ -81,8 +81,10 @@ input:focus{
 }
 
 .kiesPlant{
+    height: 25vh;
     width: 60vw;
     margin-bottom: 2vh;
+    object-fit: cover;
 }
 
 .arrowDown{
@@ -110,6 +112,13 @@ input:focus{
     margin-bottom: 5vh;
 }
 
+.plantKeuzeOba h1{
+    margin-top: 3vh;
+    font-size: 2rem;
+    width: 90vw;
+    color: #F86C24;
+}
+
 .planten{
     margin-top: 5vh;
 }
@@ -121,7 +130,9 @@ input:focus{
 }
 
 .plantenFoto{
+    height: 30vh;
     width: 50vw;
+    object-fit: cover;
 }
 
 /* + selecteert de eerstvolgende sibling */

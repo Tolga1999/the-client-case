@@ -37,7 +37,7 @@ function gaTerug() {
 function selectedFile() {
     inruilText.innerHTML = 'Klik nogmaals voor een andere keuze'
     if (kiesPlant.src === 'http://127.0.0.1:5500/assets/cactus.jpg')
-        kiesPlant.src = '/assets/arrowDown.png' //hardcoded omdat ik geen local resources kan inladen
+        kiesPlant.src = '/assets/plant3.jpg' //hardcoded omdat ik geen local resources kan inladen
     else {
         kiesPlant.src = '/assets/cactus.jpg'
     }
@@ -51,8 +51,6 @@ function kiezenPlantje() {
     plantInput.forEach(element => {
         element.style.opacity = "0"
     })
-    let kiesPlant2 = document.querySelector('.kiesPlant2')
-    kiesPlant2.src = '/assets/star.png'
 }
 
 function gekozenPlantje(){
@@ -61,13 +59,18 @@ function gekozenPlantje(){
         element.style.opacity = "1"
     })
     body.style.overflow = 'scroll'
+    let kiesPlant2 = document.querySelector('.kiesPlant2')
+    if(kiesPlant2.src == 'http://127.0.0.1:5500/assets/plant4.jpg'){
+        kiesPlant2.src = '/assets/plant.jpg'
+    }else
+    kiesPlant2.src = '/assets/plant4.jpg'
 }
 
 // doneer pagina
 function selectedDoneerFile() {
     doneerText.innerHTML = 'Klik nogmaals voor een andere keuze'
-    if (doneerPlant.src === 'http://127.0.0.1:5500/assets/cactus.jpg')
-        doneerPlant.src = '/assets/arrowDown.png' //hardcoded omdat ik geen local resources kan inladen
+    if (doneerPlant.src == 'http://127.0.0.1:5500/assets/cactus.jpg')
+        doneerPlant.src = '/assets/plant3.jpg' //hardcoded omdat ik geen local resources kan inladen
     else {
         doneerPlant.src = '/assets/cactus.jpg'
     }
