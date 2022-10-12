@@ -26,8 +26,8 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: 50.5vh;
-    width: 80vw;
+    height: 60vh;
+    width: 82.5vw;
     border: 3px solid #B1D338;
     border-radius: 0.5rem;
     padding: 5vh 0;
@@ -68,6 +68,19 @@ main {
     margin-top: 1vh;
 }
 
+.generatedCode{
+    margin-top: 1vh;
+    width: 60%;
+    font-size: 1.1rem;
+}
+
+.generatedCode span{
+    display: inline-block; /* inline block needed because its not a block element */
+    margin-top: 0.8vh;
+    font-weight: bold;
+    color: #F86C24;
+}
+
 .informatieText h1{
     color: #F86C24;
     font-size: 1.5rem;
@@ -75,7 +88,7 @@ main {
 }
 
 .informatieText p{
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .buurtcampusOostLink{
