@@ -27,10 +27,10 @@ main {
     align-items: center;
     justify-content: space-evenly;
     height: 60vh;
-    width: 82.5vw;
+    width: 87vw;
     border: 3px solid #B1D338;
     border-radius: 0.5rem;
-    padding: 5vh 0;
+    padding: 3vh 0;
 }
 
 .donateLogo {

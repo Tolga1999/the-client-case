@@ -11,12 +11,38 @@
 </head>
 
 <body>
+    <!-- overlay menu -->
     <div class="overlay">
         <div class="buttons">
             <button class="ruilenDoneren" onclick="gaTerug()">Ga terug</button>
             <a class="ruilenDoneren" href="../index.html">Home</a>
             <a class="ruilenDoneren" href="form.html">Ruilen</a>
             <a class="ruilenDoneren" href="donateform.html">Doneren</a>
+        </div>
+    </div>
+    <!-- overlay plantjes kiezen -->
+    <div class="overlayPlant">
+        <div class="plantKeuzeOba">
+            <!-- labels used for accessibility -->
+            <label class="planten" for="plant">
+                <input class="radioButton" type="radio" name="plant" value="">
+                <img class="plantenFoto" src="/assets/plant.jpg" alt="plant1">
+            </label>
+            
+            <label class="planten" for="plant">
+                <input class="radioButton" type="radio" name="plant" value="">
+                <img class="plantenFoto" src="/assets/plant.jpg" alt="plant2">
+            </label>
+
+            <label class="planten" for="plant">
+                <input class="radioButton" type="radio" name="plant" value="">
+                <img class="plantenFoto" src="/assets/plant.jpg" alt="plant3">
+            </label>
+
+            <label class="planten" for="plant">
+                <input class="radioButton" type="radio" name="plant" value="">
+                <img class="plantenFoto" src="/assets/plant.jpg" alt="plant4">
+            </label>
         </div>
     </div>
     <header>
@@ -46,12 +72,13 @@
                     <p class="inruilText">Wat wil je inruilen?</p>
                     <img class="kiesPlant" src="/assets/plant2.jpg" alt="kiesPlant">
                     <input type="file" class="inputKiesPlant" accept="image/png, image/jpeg" onchange="selectedFile()"
-                        required> <!-- kieze van je plantje op je computer -->
+                        required> <!-- kieze een plantje op je computer -->
                 </div>
                 <img class="arrowDown" src="/assets/arrowDown.png" alt="arrowDown">
                 <div class="plantInruilen">
                     <p class="inruilText">Wat voor plantje wil je?</p>
-                    <img class="kiesPlant" src="/assets/plant2.jpg" alt="kiesPlant">
+                    <img class="kiesPlant" src="/assets/plant2.jpg" alt="kiesPlant" onclick="kiezenPlantje()">
+                    <input type="button" class="inputKiesPlant" onclick="kiezenPlantje()" required>
                 </div>
                 <input class="submit" type="submit" value="Ruilen">
             </form>

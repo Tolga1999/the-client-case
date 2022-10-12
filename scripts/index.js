@@ -1,4 +1,5 @@
 let overlay = document.querySelector('.overlay')
+let overlayPlant = document.querySelector('.overlayPlant')
 let menuButton = document.getElementById('menuButton')
 let body = document.querySelector('body')
 // selecteren van files
@@ -37,6 +38,17 @@ function selectedFile() {
     else {
         kiesPlant.src = '/assets/cactus.jpg'
     }
+}
+
+function kiezenPlantje() {
+    overlayPlant.classList.add('overlayOn')
+    body.style.overflow = 'hidden'
+
+    let plantInput = document.querySelectorAll(".plantInruilen")
+    // foreach wordt gebruikt voor elke element binnen de array
+    plantInput.forEach(element => {
+        element.style.opacity = "0"
+    });
 }
 
 // doneer pagina

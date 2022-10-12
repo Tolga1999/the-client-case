@@ -101,6 +101,35 @@ input:focus{
     opacity: 0;
 }
 
+/* KIES PLANT VAN OBA */
+.plantKeuzeOba{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.planten{
+    margin-top: 5vh;
+}
+
+.radioButton{
+    position: absolute;
+    opacity: 0;
+    height: 30vh;
+}
+
+.plantenFoto{
+    width: 50vw;
+}
+
+/* + selecteert de eerstvolgende sibling */
+.radioButton:checked + img{
+    outline: 2px solid red; /* outline is een lijn buiten de border */
+}
+
+/* END KIES PLANT OBA */
+
 .vragen{
     margin-top: 3vh;
     border-top: #B1D338 solid 3px;
