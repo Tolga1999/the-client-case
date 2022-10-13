@@ -27,7 +27,8 @@
     <main>
         <section class="sectionForm">
             <h1 class="titelForm">Doneren</h1>
-            <form onsubmit="donatedpage();return false"> <!-- return false nodig zodat page niet meer reload -->
+            <form onsubmit="donatedpage();return false">
+                <!-- return false nodig zodat page niet meer reload -->
                 <div class="labelInput">
                     <div>
                         <label for="naam">Naam</label>
@@ -45,13 +46,12 @@
                 <div class="doneerPlantInruilen">
                     <p class="doneerText">Wat wil je Doneren?</p>
                     <img class="doneerPlant" src="/assets/cactus2.jpg" alt="kiesPlant">
-                    <input type="file" class="inputKiesPlant" accept="image/png, image/jpeg" onchange="selectedDoneerFile()"
-                        required> <!-- kieze van je plantje op je computer -->
+                    <input type="file" class="doneerInputKiesPlant" accept="image/png, image/jpeg"
+                        onchange="selectedDoneerFile()" required> <!-- kieze van je plantje op je computer -->
                 </div>
                 <input class="submit" type="submit" value="Doneer">
             </form>
         </section>
-       
     </main>
     <div class="menu">
         <button id="menuButton" onclick="menuOpen()">Menu</button>
