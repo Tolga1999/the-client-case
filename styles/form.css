@@ -1,4 +1,4 @@
-.titelForm{
+.titelForm {
     font-size: 2.75rem;
     letter-spacing: 0.2rem;
     margin: 0;
@@ -6,7 +6,7 @@
     color: #333467;
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,61 +16,62 @@ form{
     /* alles standaard achter de overlay */
 }
 
-label{
+label {
     display: flex;
     flex-direction: column;
     font-size: 1.25rem;
     font-weight: bold;
 }
 
-form label, input{
+form label,
+input {
     padding: 2.2vw;
     margin: 1vw;
 }
 
-.labelInput{
+.labelInput {
     padding: 7vw;
     width: 75vw;
 }
 
-.labelInput div{
+.labelInput div {
     display: flex;
     justify-content: space-between;
     margin-bottom: 3vh;
 }
 
-input{
+input {
     border: solid 3px #ccc;
     height: 2.5vh;
     transition: ease 0.5s;
     width: 40%;
 }
 
-input:focus{
+input:focus {
     border: solid 3px #B1D338;
     outline: none;
     width: 75%;
 }
 
-.submit{
+.submit {
     color: #ffff;
     background-color: #B1D338;
     border: none;
     border-radius: 0.5rem;
     /* exact values as Figma */
     height: 60px;
-    width: 187px; 
+    width: 187px;
     font-size: 1.2rem;
     margin-bottom: 3vh;
 }
 
-.plantInruilen{
+.plantInruilen {
     display: flex;
     align-items: center;
     height: 100%;
 }
 
-.inruilText{
+.inruilText {
     position: absolute;
     z-index: 1;
     font-size: 1.65rem;
@@ -80,19 +81,19 @@ input:focus{
     margin: 0 0 0 5vw;
 }
 
-.kiesPlant{
+.kiesPlant {
     height: 25vh;
     width: 60vw;
     margin-bottom: 2vh;
     object-fit: cover;
 }
 
-.arrowDown{
+.arrowDown {
     width: 30vw;
     margin-bottom: 1.5vh;
 }
 
-.inputKiesPlant{
+.inputKiesPlant {
     position: absolute;
     z-index: 5;
     border: none;
@@ -104,7 +105,7 @@ input:focus{
 }
 
 /* KIES PLANT VAN OBA */
-.plantKeuzeOba{
+.plantKeuzeOba {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -112,76 +113,133 @@ input:focus{
     margin-bottom: 5vh;
 }
 
-.plantKeuzeOba h1{
+.plantKeuzeOba h1 {
     margin-top: 3vh;
     font-size: 2rem;
     width: 90vw;
     color: #F86C24;
 }
 
-.planten{
+.planten {
     margin-top: 5vh;
 }
 
-.radioButton{
+.radioButton {
     position: absolute;
     opacity: 0;
     height: 30vh;
 }
 
-.plantenFoto{
+.plantenFoto {
     height: 30vh;
     width: 50vw;
     object-fit: cover;
 }
 
 /* + selecteert de eerstvolgende sibling */
-.radioButton:checked + img{
-    outline: 2px solid #B1D338; /* outline is een lijn buiten de border */
+.radioButton:checked+img {
+    outline: 2px solid #B1D338;
+    /* outline is een lijn buiten de border */
 }
 
 /* END KIES PLANT OBA */
 
-.vragen{
+.vragen {
     margin-top: 3vh;
     border-top: #B1D338 solid 3px;
     padding-top: 2vh;
     width: 90vw;
 }
 
-.vragen h2{
+.vragen h2 {
     color: #F86C24;
     font-size: 2rem;
     margin-bottom: 0.5vh;
 }
 
-.googleMapsContent{
+.googleMapsContent {
     margin-top: 2vh;
     color: #F86C24;
 }
 
-.googleMapsContent p{
+.googleMapsContent p {
     font-size: 1.5rem;
 }
 
-.googleMapsFoto{
+.googleMapsFoto {
     margin-top: 1vh;
     width: 90vw;
 }
 
 /* DONEER PAGINA */
-.doneerPlant{
-    object-fit: cover; /* object wordt niet meer gestretched en houdt aspect ratio */
+.doneerPlant {
+    object-fit: cover;
+    /* object wordt niet meer gestretched en houdt aspect ratio */
     width: 75vw;
     height: 40vh;
     margin-bottom: 2vh;
 }
 
-.doneerText{
+.doneerText {
     position: absolute;
     z-index: 1;
     font-size: 2.5rem;
     width: 60%;
     margin: 0 0 0 5vw;
     color: #ffff;
+}
+
+/* form.html */
+@media screen and (min-width: 768px) {
+    /* form.html */
+    .sectionForm form{
+        width: 35vw;
+    }
+
+    form .labelInput{
+        width: 32vw;
+        padding: 3vh;
+    }
+
+    .plantInruilen{
+        width: 30vw;
+    }
+
+    .arrowDown{
+        width: 12.5vw;
+    }
+
+    .inruilText{
+        width: 25vw;
+    }
+
+    .submit{
+        padding: 0;
+    }
+
+    .vragen, .googleMapsContent, .googleMapsContent img{
+        width: 50vw;
+    }
+    /* END form.html */
+
+    /* donateform.html */
+    .doneerPlantInruilen{
+        display: flex;
+        flex-direction: column;
+    }
+    .doneerText{
+        margin-left: 2vw;
+        margin-top: 10vh;
+        width: 20vw;
+    }
+
+    .inputKiesPlant{
+        width: 22vw;
+        height: 40vh;
+    }
+
+    .doneerPlant{
+        width: 22vw;
+    }
+    /* END donateform */
 }
