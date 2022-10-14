@@ -41,6 +41,13 @@ _de overlay staat standaard "uit" en wordt getoond met de JS onclick functie_
 ```
 
 Het menu staat standaard "uit" in CSS, door te klikken op de knop "Menu" wordt de visibility en opacity van het menu weer op 100% gezet. Er wordt een class toegevoegd aan overlay om de ease in animatie mogelijk te maken binnen de class.
+
+_hieronder de HTML en JS code voor het menu:_
+``` html
+<div class="menu">
+     <button id="menuButton" onclick="menuOpen()">Menu</button>
+</div>
+```
 ``` js
 function menuOpen() {
     overlay.classList.add('overlayOn')
